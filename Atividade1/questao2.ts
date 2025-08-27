@@ -1,9 +1,9 @@
-import leia = require("readline-sync");
+import readlinesync = require("readline-sync");
 
 let listaNum: Set<number> = new Set<number>()
 
 do {
-    let num:number = leia.questionInt('Insira o Valor desejado: ')
+    let num:number = readlinesync.questionInt('Insira o Valor desejado: ')
     listaNum.add(num)
 } while (listaNum.size < 10);
 
